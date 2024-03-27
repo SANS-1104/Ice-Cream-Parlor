@@ -1,0 +1,36 @@
+body{
+    background-image: url('bg2.jpg');
+    background-size: cover;
+}
+.container{
+    border: 15px solid black;
+    width: fit-content;
+    margin: auto;
+    margin-top: 6rem;
+    background-image: url('background.jpg');
+}
+
+.head{
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+}
+.way{
+    margin: 2rem;
+    text-align: center;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 1.25rem;
+    width: 16rem;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    {% load static %}
+    <link rel='stylesheet' href= "{% static 'contact.css'%}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="upnav"><img src="{% static 'images/heart.avif'%}" alt="" class="heart_img"></div>
+    <div class="navbar">
+        <a href="/home" class="home">Home</a>
+        <a href="/products">Products</a>
+        <a href="/facts">Facts</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Sign Up</a>
+    </div>
+
+    <div class="content">
+        <div class="main">
+            <div class="link">
+                <a href="/home">Home</a> / Contact Us
+            </div>
+            <h2>CONTACT US!!</h2>
+            <p>We're always happy to hear from fellow ice cream lovers so if you have a query or would like <br>some more information about Kwality Wall's products, please contact us using the details <br>below.</p>
+            <h4>* Mandatory Field</h4>
+            <form action="/contact" method="post">
+                {% csrf_token %}
+                <label for="enquiry">Please tell us the reason for your enquiry *</label>
+                <br>
+                <textarea name="enquiry" id="enquiry" cols="40" rows="5"></textarea>
+
+                <div class="btn_ic"> <button>SUBMIT</button> </div>
+
+            </form>
+        </div>
+        <div class="side">
+            <p class="title">BY PHONE</p>
+            <p class="data">Toll free number: 1800-102-2221</p>
+            <p class="title">WRITE FOR US</p>
+            <p class="title">Corporate Office</p>
+            <p class="data">Hindustan Unilever Limited,Unilever House, B. D. <br>Sawant Marg,Chakala, Andheri <br>(E), PO Box No 1470, Mumbai - <br>400 099.</p>
+            <p class="title">By Email</p>
+            <p class="data">Email: <br>lever.care@unilever.com</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="upper">
+            <div class="heart"><img src="{% static 'images/heart.avif'%}" alt=""></div>
+            <div class="content">
+                <a href="">Sitemap</a>
+                <a href="/contact">Contact Us</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Unilever</a>
+                <a href="">Legal</a>
+                <a href="">Cookie Notice</a>
+                <a href="">Accessibility</a>
+            </div>
+            <div class="follow">
+                <p>Follow Us</p>
+                <a href="/facebook"><img src="{% static 'images/facebook.png'%}" alt="" id="im1"></i></a>
+                <a href="/instagram"><img src="{% static 'images/insta.webp'%}" alt="" id="im2"></a>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="lower-upper">
+                <p id="loc">LOCATION</p>
+                <div class="location">
+                    <p>INDIA</p>
+                    <p> | </p>
+                    <p>CHANGE LOCATION</p>
+                </div>
+            </div>
+            <div class="lower-lower">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

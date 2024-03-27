@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.upnav{
+    width: 100%;
+    height: 2.75rem;
+    background-color: #de2727;
+}
+
+.heart_img{
+    width: 10rem;
+    height: 6.5rem;
+    margin-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+.navbar{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+a.home{
+    margin-left: 15rem;
+}
+.section{
+    background-image: url("images/section_bg.avif");
+    width: 100%;
+    height: 40rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.poster{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    width: 30rem;
+    height: 30rem;
+    background-color: #ffe363;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.poster #heading{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: #de2727;
+    margin-top: 4rem;
+}
+
+.poster #description{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #de2727;
+}
+
+.poster .btn_ic{
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: #de2727;
+}
+
+.poster .btn_ic button{
+    padding: 0.5rem;
+    width: 24rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 3rem;
+    border: 3px solid white;
+    color: white;
+    background-color: #de2727;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.brands  h2{
+    text-align: center;
+    color: #de2727;
+    font-size: 4rem;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+.card_img{
+    margin: 2rem;
+}
+
+.card_img #img1{
+    width: 15rem;
+    height: 16rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+}
+.card_img #img2{
+    width: 15rem;
+    height: 5.6rem;
+    border-radius: 3rem;
+}
+
+.last_img{
+    margin-left: 37%;
+}
+
+.find_out_more h2{
+    text-align: center;
+    color: #de2727;
+    font-size: 4rem;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3rem;
+}
+
+.find_out_more .desc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+}
+
+.find_out_more .desc .desc_img{
+    margin-right: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 10px  #de2727;
+    border-style :double;
+    padding: 2rem;
+}
+
+.desc_img p#para{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #de2727;
+    text-decoration: none;
+}
+.desc_img a{
+    text-decoration: none;
+}
+
+.footer{
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #de2727;
+    color: white;
+    height: 10rem;
+}
+.footer .upper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .upper .heart{
+    width: 15%;
+}
+.footer .upper .heart img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 5rem;
+    margin-top: 0;
+}
+.footer .upper .content{
+    width: 70%;
+}
+.footer .upper .content a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.footer .upper .follow{
+    width: 15%;
+}
+.footer .upper .follow p{
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.footer .upper .follow a img#im1{
+    width: 4rem;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.footer .upper .follow a img#im2{
+    width: 2rem;
+    height: 2rem;
+}
+
+.location{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5%;
+}
+
+.lower{
+    margin-top: 0.5rem;
+}
+
+.lower-upper{
+    margin-left: 40% ;
+}
+
+.lower-upper p#loc{
+    font-size: 1.25rem;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: .25rem;
+}
+
+.location p{
+    font-size: 1rem;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 0.5rem;
+}
+

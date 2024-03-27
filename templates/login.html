@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    {% load static %}
+    <link rel='stylesheet' href= "{% static 'login.css'%}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="upnav"><img src="{% static 'images/heart.avif'%}" alt="" class="heart_img"></div>
+    <div class="navbar">
+        <a href="/home" class="home">Home</a>
+        <a href="/products">Products</a>
+        <a href="/facts">Facts</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Sign Up</a>
+    </div>
+
+    <div class="content">
+        <h2>REgISTER TO HAVE OUR PRODUCTS iN YOUR RESTAURANT</h2>
+        <div class="form">
+            <form method = "post" action = "/login" class="sign_up">
+                {% csrf_token %}
+                <h4>* Fields marked with an asterisk are required.</h4>
+                <br><br>
+                <label for="fname">First Name *</label>
+                <br>
+                <input type="text" name="fname" id="fname" class="text" required>
+                <br><br>
+                <label for="lname">Last Name *</label>
+                <br>
+                <input type="text" name="lname" id="lname"  class="text" required>
+                <br><br>
+                <label for="email">Email Address *</label>
+                <br>
+                <input type="email" name="email" id="email" class="text" required>
+                <br><br>
+                <label for="phone">Mobile Number * </label>
+                <br>
+                <input type="number" name="phone" id="phone" class="text" required>
+                <br><br>
+                <input type="checkbox" name="yes" id="yes">
+                <label for="yes">Yes, I want to receive offers and updates from trusted Unilever brands via Email and SMS, Whastapp and online advertising tailored to my interests and preferences.</label>
+                <div class="btn_ic"> <button>SIGN UP</button> </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="upper">
+            <div class="heart"><img src="{% static 'images/heart.avif'%}" alt=""></div>
+            <div class="content">
+                <a href="">Sitemap</a>
+                <a href="/contact">Contact Us</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Unilever</a>
+                <a href="">Legal</a>
+                <a href="">Cookie Notice</a>
+                <a href="">Accessibility</a>
+            </div>
+            <div class="follow">
+                <p>Follow Us</p>
+                <a href="/facebook"><img src="{% static 'images/facebook.png'%}" alt="" id="im1"></i></a>
+                <a href="/instagram"><img src="{% static 'images/insta.webp'%}" alt="" id="im2"></a>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="lower-upper">
+                <p id="loc">LOCATION</p>
+                <div class="location">
+                    <p>INDIA</p>
+                    <p> | </p>
+                    <p>CHANGE LOCATION</p>
+                </div>
+            </div>
+            <div class="lower-lower">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

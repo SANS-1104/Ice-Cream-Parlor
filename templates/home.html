@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWALITY WALLS | HOME</title>
+    {% load static %}
+    <link rel='stylesheet' href= "{% static 'home.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="upnav"><img src="{% static 'images/heart.avif'%}" alt="" class="heart_img"></div>
+    
+    <div class="navbar">
+        <a href="/home" class="home">Home</a>
+        <a href="/products">Products</a>
+        <a href="/facts">Facts</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Sign Up</a>
+    </div>
+
+    <div class="section">
+        <div class="poster">
+            <p id="heading">CHOOSE HAPPiNESS TOgETHER!</p>
+            <p id="description">We've got a little something for <br> everyone!</p>
+            <div class="btn_ic"> <button>OUR ICE CREAMS</button> </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <h2>OUR BRANDS</h2>
+        <div class="card">
+            <div class="card_img">
+                <img src="{% static 'images/magnum_img.avif'%}" alt=""  id="img1">
+                <br>
+                <img src="{% static 'images/magnum_label.avif'%}" alt="" id="img2">
+            </div>
+            <div class="card_img">
+                <img src="{% static 'images/corneto_img.avif'%}" alt=""  id="img1">
+                <br>
+                <img src="{% static 'images/corneto_label.avif'%}" alt="" id="img2">
+            </div>
+            <div class="card_img">
+                <img src="{% static 'images/mango_img.avif'%}" alt=""  id="img1">
+                <br>
+                <img src="{% static 'images/kwt_label.avif'%}" alt="" id="img2">
+            </div>
+            <div class="card_img">
+                <img src="{% static 'images/bucket_img.avif'%}" alt=""  id="img1">
+                <br>
+                <img src="{% static 'images/bucket_label.avif'%}" alt="" id="img2">
+            </div>
+            <div class="card_img last_img">
+                <img src="{% static 'images/feast_img.avif'%}" alt=""  id="img1">
+                <br>
+                <img src="{% static 'images/feast_label.avif'%}" alt="" id="img2">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="find_out_more">
+        <h2>FiND OUT MORE</h2>
+        <div class="desc">
+            <div class="desc_img">
+                <a href="/products">
+                    <img src="{% static 'images/purpose.avif'%}" alt="">
+                    <p id="para">OUR PRODUCTS</p>
+                </a>   
+            </div>
+            <div class="desc_img">
+                <a href="/contact">
+                    <img src="{% static 'images/contact.avif'%}" alt="">
+                    <p id="para">CONTACT US</p>
+                </a>
+            </div>
+            <div class="desc_img">
+                <a href="/facts">
+                    <img src="{% static 'images/facts.avif'%}" alt="">
+                    <p id="para">FACTS</p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="upper">
+            <div class="heart"><img src="{% static 'images/heart.avif'%}" alt=""></div>
+            <div class="content">
+                <a href="">Sitemap</a>
+                <a href="/contact">Contact Us</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Unilever</a>
+                <a href="">Legal</a>
+                <a href="">Cookie Notice</a>
+                <a href="">Accessibility</a>
+            </div>
+            <div class="follow">
+                <p>Follow Us</p>
+                <a href="https://www.facebook.com/kwalitywallsindia"><img src="{% static 'images/facebook.png'%}" alt="" id="im1"></i></a>
+                <a href="https://www.instagram.com/kwalitywalls/"><img src="{% static 'images/insta.webp'%}" alt="" id="im2"></a>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="lower-upper">
+                <p id="loc">LOCATION</p>
+                <div class="location">
+                    <p>INDIA</p>
+                    <p> | </p>
+                    <p>CHANGE LOCATION</p>
+                </div>
+            </div>
+            <div class="lower-lower">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
